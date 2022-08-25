@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Zeland | Tourism Website</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External Library for Date Range -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" defer src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+<body>
+    <!-- For Home -->
+    <div class="home_container">
+        <!-- Logo & Navigation -->
+        <header>
+            <nav>
+                <!-- Logo -->
+                <div class="logo"><i class="fa-solid fa-q"></i></div>
+                <!-- Center Navigation -->
+                <div class="center_nav">
+                    <ul class="navigation">
+                        <li class="basic_nav"><a href="#" class="links">Home</a></li>
+                        <li class="basic_nav"><a href="#timeline" class="links">Timeline</a></li>
+                        <li class="basic_nav"><a href="#" class="links">Contact</a></li>
+                        <li class="basic_nav"><a href="#information" class="links">About</a></li>
+                    </ul>
+                </div>
+                <!-- Right Button -->
+                <div class="schedule">
+                    <button type="button" class="schedule_btn">Schedule it!</button>
+                </div>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            </nav>
+        </header>
+        <main>
+            <div class="home_content">
+                <div class="left_content">
+                    <div class="range_date" id="reportrange">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="from_to_date"></span>
+                    </div>
+                    <div class="country_data">
+                        <h2 class="country_name">New Zealand</h2>
+                        <h4 class="nature_head">Nature Explore.</h4>
+                    </div>
+                </div>
+                <div class="right_img">
+                    <div class="round_letgo">
+                        <p class="letsgo_text">Lets's Go <i class="fa-solid fa-arrow-right"></i></p>
+                        <div class="round_map">
+                            <i class="fa-solid fa-map"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_footer">
+                <div class="left_home_footer_side">
+                    <div class="left_home_footer">
+                        <p>Get to know about <span class="country_na">New Zealand</span> nature <br> expedition and get ready for the trips.</p>
+                    </div>
+                    <div class="right_home_footer">
+                        <p>Primary focus of our mission is documenting <br> the middle of New Zealand</p>
+                    </div>
+                </div>
+                <div class="right_home_footer_side">
+                    <div class="insta social_icon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="twitt social_icon"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="youtu social_icon"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- <section class="about"> -->
+    <section class="about">
+        <div class="grid-container">
+            <!-- 1 -->
+            <div class="left_top_about grid-item">
+                <div class="text_on_greenary">
+                    <p id="text_head_greenary"><span class="percentage">13%</span>of Nature</p>
+                    <p id="sub_text">in New Zealand is fully porvided<br> big number of oxygen in the world.</p>
+                </div>
+                <div class="text_bottom_on_greenary ">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="greenary_place">Green Savana, New Zealand</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="right_top_about grid-item">
+                <div class="first_text">
+                    <h2>nature,</h2>
+                    <div class="sub_text_first">
+                        <p>one of the most potential<br>thing that we can meet in</p>
+                    </div>
+                </div>
+                <div class="sec_text">
+                    <h1>New Zealand</h1>
+                </div>
+                <div class="first_text">
+                    <div class="sub_text_first">
+                        <p>is should be protected and<br>discovered to be enjoyed</p>
+                    </div>
+                    <h2 id="forever">forever.</h2>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="bottom_about grid-item">
+                <div class="empty_field"></div>
+            </div>
+            <!-- 4 -->
+            <div class="book_slot grid-item">
+                <a href="#">Book your slot now!<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Timeline -->
+    <section class="timeline" id="timeline">
+        <div class="timeline_content">
+            <div class="timeline_head_left">
+                <h2 id="timeline_title">Our<br>Timeline</h2>
+                <button type="submit" class="see_timeline">See timeline</button>
+            </div>
+            <div class="timeline_batch_right">
+                <div class="batch">
+                    <p class="batch_title">BATCH 1</p>
+                    <div class="batch_date_pick">
+                        <div class="date_recommend"> 
+                            <input type="text" name="birthday" value="12 June 2022" class="time_date"/>
+                            <p class="end">ended</p>
+                        </div>
+                        <div class="navi_timeline">
+                            <p class="participants">See Participants</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="batch">
+                    <p class="batch_title">BATCH 2</p>
+                    <div class="batch_date_pick">
+                        <div class="date_recommend"> 
+                            <input type="text" name="birthday" value="" class="time_date" />
+                            <p id="avail">Available</p>
+                        </div>
+                        <div class="navi_timeline">
+                            <p class="participants"><i class="fa-solid fa-arrow-right arrow"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    <div class="globe">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <p class="accept">We accept worldwide participant from all countries, please check our requirements for registration permission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Information reagarding the ecosystem -->
+    <section class="information" id="information">
+        <div class="info_content">
+            <div class="left_info_nav">
+                <ul class="info_nav">
+                    <li class="navigate mountain"><a href="#" class="nav_links">01. Mountain</a></li>
+                    <li class="navigate river"><a href="#" class="nav_links active">02. River</a></li>
+                    <li class="navigate ocean"><a href="#" class="nav_links">03. Ocean</a></li>
+                    <li class="navigate animals"><a href="#" class="nav_links">04. Animals</a></li>
+                </ul>
+            </div>
+            <div class="right_info_content tab">
+                <div class="tab_head">
+                    <button class="tablinks">Overview</button>
+                    <button class="tablinks">Gallery</button>
+                    <button class="tablinks">Maps</button>
+                </div>
+                <div class="tab_desc">
+                    <h3>Things you should know about New Zeland's <span class="loc">river</span></h3>
+                    <p>Flowing through the heart of New Zealand's North Island, the Whanganui River is one of the country's most important natural resources.</p>
+                    <div class="blog_btn_and_data">
+                        <button type="submit" class="see_timeline blog_btn"> See Blog</button>
+                        <div class="data">
+                            <div class="details">
+                                Whanganui River<br>New Zealand
+                            </div>
+                            <div class="loc_img">
+                                <img src="./assests/greenary.jpg" alt="River" class="small_img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "nature":"mountain",
+        "exact_location":"Neelagiri"
+    },
+    {
+        "id":2,
+        "nature":"river",
+        "exact_location":"Whanganui River"
+    },
+    {
+        "id":3,
+        "nature":"ocean",
+        "exact_location":"Indian"
+    },
+    {
+        "id":4,
+        "nature":"animals",
+        "exact_location":"Zoo"
+    }
+]
