@@ -1,22 +1,30 @@
 [
     {
-        "id":1,
-        "nature":"mountain",
-        "exact_location":"Neelagiri"
+        "id": 1,
+        "nature": "mountain",
+        "exact_location": "Neelagiri",
+        "description": "Most of New Zealand's mountains are in the South Island. The 23 peaks over 3,000 metres high are all in the Southern Alps, which stretch for 500 kilometres down the South Island. This is a breathtaking landscape of towering peaks, ice, snow and huge glaciers such as Franz Josef and Fox.",
+        "img":"../assests/new_mountain.jpg"
     },
     {
-        "id":2,
-        "nature":"river",
-        "exact_location":"Whanganui River"
+        "id": 2,
+        "nature": "river",
+        "exact_location": "Whanganui River",
+        "description": "Flowing through the heart of New Zealand's North Island, the Whanganui River is one of the country's most important natural resources.",
+        "img": "../assests/new_river.jpg"
     },
     {
-        "id":3,
-        "nature":"ocean",
-        "exact_location":"Indian"
+        "id": 3,
+        "nature": "ocean",
+        "exact_location": "Indian",
+        "description": "Why is the ocean important to New Zealand?They rely on the ocean for food security as well as their social, cultural, environmental, and economic well-being. As an island nations, we take a strong interest in the way the ocean is managed. The sea is an important part of New Zealanders' our lives both recreationally and as a source of food and income.",
+        "img": "../assests/new_ocean.jpg"
     },
     {
-        "id":4,
-        "nature":"animals",
-        "exact_location":"Zoo"
+        "id": 4,
+        "nature": "animals",
+        "exact_location": "Zoo",
+        "description": "New Zealand has many unique native fish, insects, birds, lizards and frogs. Our only native mammals are bats and marine mammals.",
+        "img": "../assests/new_animals.jpg"
     }
 ]

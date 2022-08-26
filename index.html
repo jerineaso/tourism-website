@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- External Library for Date Range -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" defer src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" defer
+        src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 </head>
+
 <body>
     <!-- For Home -->
     <div class="home_container">
@@ -29,8 +33,8 @@
                     <ul class="navigation">
                         <li class="basic_nav"><a href="#" class="links">Home</a></li>
                         <li class="basic_nav"><a href="#timeline" class="links">Timeline</a></li>
-                        <li class="basic_nav"><a href="#" class="links">Contact</a></li>
                         <li class="basic_nav"><a href="#information" class="links">About</a></li>
+                        <li class="basic_nav"><a href="#contact" class="links">Contact</a></li>
                     </ul>
                 </div>
                 <!-- Right Button -->
@@ -54,7 +58,7 @@
                 </div>
                 <div class="right_img">
                     <div class="round_letgo">
-                        <p class="letsgo_text">Lets's Go <i class="fa-solid fa-arrow-right"></i></p>
+                        <p class="letsgo_text">Lets's <br>Go <i class="fa-solid fa-arrow-right"></i></p>
                         <div class="round_map">
                             <i class="fa-solid fa-map"></i>
                         </div>
@@ -64,7 +68,8 @@
             <div class="home_footer">
                 <div class="left_home_footer_side">
                     <div class="left_home_footer">
-                        <p>Get to know about <span class="country_na">New Zealand</span> nature <br> expedition and get ready for the trips.</p>
+                        <p>Get to know about <span class="country_na">New Zealand</span> nature <br> expedition and get
+                            ready for the trips.</p>
                     </div>
                     <div class="right_home_footer">
                         <p>Primary focus of our mission is documenting <br> the middle of New Zealand</p>
@@ -123,16 +128,18 @@
     <!-- Timeline -->
     <section class="timeline" id="timeline">
         <div class="timeline_content">
+            <!-- Heading as Timeline -->
             <div class="timeline_head_left">
                 <h2 id="timeline_title">Our<br>Timeline</h2>
                 <button type="submit" class="see_timeline">See timeline</button>
             </div>
+            <!-- Batch Details -->
             <div class="timeline_batch_right">
                 <div class="batch">
                     <p class="batch_title">BATCH 1</p>
                     <div class="batch_date_pick">
-                        <div class="date_recommend"> 
-                            <input type="text" name="birthday" value="12 June 2022" class="time_date"/>
+                        <div class="date_recommend">
+                            <input type="text" name="birthday" value="" class="time_date over_date" />
                             <p class="end">ended</p>
                         </div>
                         <div class="navi_timeline">
@@ -143,7 +150,7 @@
                 <div class="batch">
                     <p class="batch_title">BATCH 2</p>
                     <div class="batch_date_pick">
-                        <div class="date_recommend"> 
+                        <div class="date_recommend">
                             <input type="text" name="birthday" value="" class="time_date" />
                             <p id="avail">Available</p>
                         </div>
@@ -156,15 +163,18 @@
                     <div class="globe">
                         <i class="fa-solid fa-globe"></i>
                     </div>
-                    <p class="accept">We accept worldwide participant from all countries, please check our requirements for registration permission.</p>
+                    <p class="accept">We accept worldwide participant from all countries, please check our requirements
+                        for registration permission.</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Timeline Ends -->
     <!-- Information reagarding the ecosystem -->
     <section class="information" id="information">
         <div class="info_content">
             <div class="left_info_nav">
+                <!-- Navigation to each tabs -->
                 <ul class="info_nav">
                     <li class="navigate mountain"><a href="#" class="nav_links">01. Mountain</a></li>
                     <li class="navigate river"><a href="#" class="nav_links active">02. River</a></li>
@@ -172,31 +182,55 @@
                     <li class="navigate animals"><a href="#" class="nav_links">04. Animals</a></li>
                 </ul>
             </div>
+            <!-- Tabs -->
             <div class="right_info_content tab">
                 <div class="tab_head">
-                    <button class="tablinks">Overview</button>
+                    <button class="tablinks active">Overview</button>
                     <button class="tablinks">Gallery</button>
                     <button class="tablinks">Maps</button>
                 </div>
                 <div class="tab_desc">
-                    <h3>Things you should know about New Zeland's <span class="loc">river</span></h3>
-                    <p>Flowing through the heart of New Zealand's North Island, the Whanganui River is one of the country's most important natural resources.</p>
-                    <div class="blog_btn_and_data">
-                        <button type="submit" class="see_timeline blog_btn"> See Blog</button>
-                        <div class="data">
-                            <div class="details">
-                                Whanganui River<br>New Zealand
-                            </div>
-                            <div class="loc_img">
-                                <img src="./assests/greenary.jpg" alt="River" class="small_img">
-                            </div>
-                        </div>
-                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- Information Section Ends-->
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <!-- Title -->
+        <div class="contact_title">
+            <h2>Contact Us</h2>
+        </div>
+        <!-- Form -->
+        <div class="container">
+            <form action="">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <br>
+                <label for="country">Country</label>
+                <br>
+                <select id="country" name="country"></select>
+                <br>
+                <label for="subject">Query</label>
+                <br>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" class="see_timeline" value="Submit">
+            </form>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25217017.530335408!2d157.013199838403!3d-39.50886475933794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d2c200e17779687%3A0xb1d618e2756a4733!2sNew%20Zealand!5e0!3m2!1sen!2sin!4v1661506479544!5m2!1sen!2sin"
+                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
             </div>
         </div>
     </section>
     <!-- Script -->
     <script src="./js/app.js"></script>
+
 </body>
+
 </html>

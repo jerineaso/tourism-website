@@ -119,7 +119,7 @@ main{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     padding: 5px;
-    width: 250px;
+    width: 300px;
     color: #ffff;
     z-index: -99;
     cursor: pointer;
@@ -159,7 +159,8 @@ main{
 .round_letgo{
     border: 3px solid #FFFF00;
     width: 105px;
-    padding: 12px 15px;
+    height: 105px;
+    padding: 25px;
     text-decoration: none;
     text-align: center;
     display: block;
@@ -276,7 +277,7 @@ main{
 }
 
 .text_on_greenary{
-    color: #c8d5c4;
+    color: #ffffff;
 }
 
 .percentage{
@@ -297,7 +298,7 @@ main{
     bottom: 10px;
     right: 10px;
     font-size: 12px;
-    color: #c8d5c4;
+    color: #ebf0e9;
 }
 
 .fa-location-dot{
@@ -317,12 +318,12 @@ main{
 
 .first_text h2{
     margin-right: 8px;
-    font-size: 2.4vw;
+    font-size: 2.1vw;
     font-weight: 100;
 }
 
 .first_text .sub_text_first{
-    font-size: 1.4vw;
+    font-size: 1.2vw;
 }
 
 .sec_text h1{
@@ -337,7 +338,7 @@ main{
 /* Bottom About */
 
 .bottom_about{
-    background-color: #c8d5c4;
+    background-color: #e8efe6;
 }
 
 .book_slot{
@@ -348,7 +349,7 @@ main{
 
 .book_slot a{
     color: #fff;
-    font-size: 1.6vw;
+    font-size: 1.3vw;
 }
 
 /* grid ends */
@@ -382,7 +383,7 @@ main{
 
 #timeline_title{
     font-weight: 600;
-    font-size: 3.86vw;
+    font-size: 3.56vw;
     margin-bottom: 8px;
 }
 
@@ -391,13 +392,13 @@ main{
     outline: none;
     background-color: #e8c155;
     padding: 5px 15px;
-    font-size: 1.76vw;
+    font-size: 1.46vw;
     cursor: pointer;
 }
 /* Right part of timeline */
 
 .timeline_batch_right{
-    width: 55%;
+    width: 58%;
     background-color: #fafafa;
     padding: 20px;
 }
@@ -433,17 +434,17 @@ main{
 }
 
 .over_date{
-    color: #babeb8;
+    color: #babeb8 !important;
 }
 
 .end{
-    font-size: 1.33vw;
+    font-size: 1.23vw;
     margin-left: 5px;
     color: #babeb8;
 }
 
 .participants{
-    font-size: 1.33vw;
+    font-size: 1.23vw;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -455,7 +456,7 @@ main{
     border-radius: 5px;
     outline: none;
     padding:0 5px;
-    font-size: 1.33vw;
+    font-size: 1.23vw;
     margin-left: -9px;
 }
 
@@ -483,19 +484,20 @@ main{
 }
 
 .accept{
-    font-size: 1.12vw;
+    font-size: 1vw;
 }
 
 /* Information */
 .information{
     height: 60vh;
-    /* background: rgb(229,224,220);
-    background: linear-gradient(180deg, rgba(229,224,220,1) 0%, rgba(166,184,196,1) 100%); */
+    background: rgb(229,224,220);
+    background: linear-gradient(180deg, rgba(229,224,220,1) 0%, rgba(166,184,196,1) 100%);
 }
 
 .info_content{
     width: 80%;
-    margin: 80px auto;
+    margin: 0px auto;
+    padding: 50px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -516,7 +518,7 @@ main{
 
 .navigate .nav_links{
     text-decoration: none;
-    color: #BBBB;
+    color: rgba(249, 249, 249, 0.733);
     font-weight: 600;
     font-size: 2vw;
     transition: transform .2s;
@@ -558,7 +560,8 @@ main{
     cursor: pointer;
 }
 
-.tablinks:hover{
+
+.tablinks:hover , .tablinks.active{
     background-color: #111;
     color: #ffff;
 }
@@ -581,7 +584,7 @@ main{
 }
 
 .blog_btn{
-    font-size: 1vw !important;
+    font-size: 1vw;
 }
 
 .data{
@@ -610,7 +613,72 @@ main{
     height: 30px;
     border-radius: 50%;
 }
+
+/* Contact */
+.contact{
+    width:90%;
+    margin: 0 auto;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_title{
+    padding-top: 35px;
+    font-size: 1.6vw;
+}
+
+#fname, #lname, select, textarea, input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+    outline: none;
+}
+
+form{
+    width: 45%;
+}
+
+#map{
+    width: 45%;
+}
+
+.map{
+    width: 100%;
+}
+
+
 /* Responsive */
+
+@media only screen and (max-width: 992px) {
+    /* Contact */
+    .container{
+        width: 100%;
+    }
+
+    #map{
+        width: 55%;
+    }
+
+    .map{
+        width: 100%;
+    }
+
+    #fname, #lname, select, textarea, input[type=submit]{
+        width: 90%;
+    }
+}
 
 @media screen and (max-width:768px) {
 
@@ -673,6 +741,24 @@ main{
     .book_slot{
         padding: 5px 13px;
     }
+
+    /* Contact */
+
+    form{
+        width: 100%;
+    }
+
+    form label{
+        font-size: 2.1vw;
+    }
+    
+    #map{
+        display: none;
+    }
+
+    #fname, #lname, select, textarea, input[type=submit]{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -710,10 +796,38 @@ main{
         margin-left: 10px;
     }
 
+    .bottom_about{
+        margin-top: 10px;
+    }
+
     /* Timeline */
 
     .timeline{
         margin-top: 70px;
+    }
+
+    .see_timeline{
+        font-size: 1.73vw;
+    }
+
+    .timeline_batch_right{
+        width: 75%;
+    }
+
+    .time_date{
+        font-size: 2.2vw;
+    }
+
+    .end{
+        font-size: 1.73vw;
+    }
+
+    .participants{
+        font-size: 1.73vw;
+    }
+
+    .accept{
+        font-size: 1.63vw;
     }
 
     /* Information */
@@ -740,6 +854,10 @@ main{
         border-right: none;
     }
 
+    .navigate .nav_links{
+        font-size: 2.5vw;
+    }
+
     .right_info_content{
         margin-top: 30px;
         width: 90%;
@@ -750,11 +868,15 @@ main{
     }
 
     .tab_desc p{
-        font-size: 1.6vw;
+        font-size: 1.9vw;
     }
 
     .details{
-        font-size: 1.4vw;
+        font-size: 1.7vw;
+    }
+
+    .blog_btn{
+        font-size: 1.73vw;
     }
 
 }
@@ -769,7 +891,7 @@ main{
     .home_content{
         flex-direction: column;
         text-align: center;
-        padding-top: 0px;
+        padding-top: 10px;
     }
 
     .range_date {
@@ -788,7 +910,9 @@ main{
     }
 
     .round_letgo{
-        width: 80px;
+        width: 95px;
+        height: 95px;
+        padding: 17px;
         font-size: 16px;
     }
 
@@ -834,12 +958,20 @@ main{
         text-align: center;
     }
 
+    #timeline_title{
+        font-size: 5vw;
+    }
+
     .timeline_head_left{
         margin-bottom: 20px;
     }
 
     .timeline_batch_right{
         width: 100%;
+    }
+
+    .see_timeline{
+        font-size: 11px;
     }
 
     .time_date{
@@ -859,7 +991,42 @@ main{
     }
 
     .accept{
-        font-size: 8px;
+        font-size: 10px;
+    }
+
+
+    /* Information */
+    .information{
+        height: 80vh;
+    }
+
+    .navigate {
+        padding: 0 5px;
+    }
+
+    .navigate .nav_links{
+        font-size: 13px;
+    }
+
+    .tab_desc h3{
+        font-size: 13px;
+    }
+
+    .tab_desc p{
+        font-size: 10px;
+    }
+
+    /* Contact */
+    .contact_title{
+        font-size: 14px;
+    }
+    
+    form label{
+        font-size: 13px;
+    }
+
+    #fname, #lname, select, textarea, input[type=submit]{
+        font-size: 12px;
     }
 }
 
